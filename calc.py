@@ -1,7 +1,7 @@
 try:
-    a = float(input("دخل العدد الأول: "))
-    b = float(input("دخل العدد الثاني: "))
-    op = input("اختار العملية (+, -, *, /): ")
+    a = float(input("Entrez le premier nombre : "))
+    b = float(input("Entrez le deuxième nombre : "))
+    op = input("Choisissez l'opération (+, -, *, /) : ")
 
     if op == "+":
         res = a + b
@@ -11,14 +11,14 @@ try:
         res = a * b
     elif op == "/":
         if b == 0:
-            print("خطأ: القسمة على صفر غير ممكنة")
+            print("Erreur : division par zéro impossible")
             exit()
         res = a / b
     else:
-        print("عملية غير صالحة")
+        print("Opération invalide")
         exit()
 
     print(f"{a} {op} {b} = {res}")
 
 except ValueError:
-    print("خطأ: خاص تدخل أعداد صحيحة أو عشرية")
+    print("Erreur : veuillez entrer des nombres valides")
