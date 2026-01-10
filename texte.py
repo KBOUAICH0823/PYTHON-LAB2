@@ -1,13 +1,13 @@
-texte = input("دخل كلمة أو جملة: ")
+texte = input("Entrez un mot ou une phrase : ")
 
-print("الطول:", len(texte))
-print("Majuscules:", texte.upper())
-print("Minuscules:", texte.lower())
-print("Inversion:", texte[::-1])
+print("Longueur :", len(texte))
+print("Majuscules :", texte.upper())
+print("Minuscules :", texte.lower())
+print("Inversion :", texte[::-1])
 
-# Palindrome
 texte_net = texte.replace(" ", "").lower()
 if texte_net == texte_net[::-1]:
-    print("هاد النص palindrome ✅")
+    print("Ce texte est un palindrome ")
 else:
-    print("هاد النص ماشي palindrome ❌")
+    print("Ce texte n'est pas un palindrome ")
+
